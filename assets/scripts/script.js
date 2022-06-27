@@ -1,4 +1,5 @@
 var passwordLength = 8;
+var charChoices = [];
 var numberList = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 var symbolList = ['!', '@', '#', '%', '^', '&', '*', '(', ')'];
 // prettier-ignore
@@ -15,11 +16,12 @@ function writePassword() {
   var userSelectedPrompt = selectPrompts();
 
   if (userSelectedPrompt) {
-    var password = generatePassword();
+    var randomPassword = generatePassword();
     var passwordText = document.querySelector('#password');
 
     passwordText.value = password;
   }
+  console.log(randomPassword);
 }
 
 function selectPrompts() {
@@ -49,4 +51,11 @@ function selectPrompts() {
   return false;
 }
 
-function generatePassword() {}
+function generatePassword() {
+  password = '';
+  for (let i = 0; i < passwordLength; i++) {
+    if (charChoices) {
+      randomPassword += charChoices[i];
+    }
+  }
+}
