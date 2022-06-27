@@ -16,18 +16,19 @@ function writePassword() {
   var userSelectedPrompt = selectPrompts();
 
   if (userSelectedPrompt) {
-    var randomPassword = generatePassword();
+    randomPassword = generatePassword();
     var passwordText = document.querySelector('#password');
 
-    passwordText.value = password;
+    passwordText.value = randomPassword;
   }
-  console.log(randomPassword);
 }
 
 function selectPrompts() {
   charChoices = [];
 
-  passwordLength = prompt('Please enter the desired length of your password between 8 - 128');
+  passwordLength = parseInt(
+    prompt('Please enter the desired length of your password between 8 - 128')
+  );
   if (passwordLength < 8 || passwordLength > 128) {
     alert('Please try again, must be between 8 - 128');
     return false;
@@ -52,10 +53,10 @@ function selectPrompts() {
 }
 
 function generatePassword() {
-  password = '';
+  randomPassword = '';
   for (let i = 0; i < passwordLength; i++) {
-    if (charChoices) {
-      randomPassword += charChoices[i];
-    }
+    var randomPassword = charChoices[Math.floor(Math.random() * charChoices.length)];
   }
+  console.log(randomPassword);
+  return randomPassword;
 }
