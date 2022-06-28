@@ -55,8 +55,8 @@ function selectPrompts() {
 function generatePassword() {
   randomPassword = '';
   for (let i = 0; i < passwordLength; i++) {
-    var randomPassword = charChoices[Math.floor(Math.random() * charChoices.length)];
+    var randomChars = charChoices[Math.floor(Math.random() * charChoices.length)];
   }
-  console.log(randomPassword);
-  return randomPassword;
+  console.log(randomChars);
+  return randomChars;
 }
