@@ -16,7 +16,7 @@
     <br />
     <br />
     <br />
-    <a href="#">View Demo</a>
+    <a href="https://garrettlockhart.github.io/random-password-gen/">View Demo</a>
     ·
     <a href="https://github.com/GarrettLockhart/random-password-gen/issues">Report Bug</a>
     ·
