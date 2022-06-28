@@ -12,7 +12,7 @@
 <h3 align="center">Random Password Generator</h3>
 
   <p align="center">
-    A simple Random password generator, which gives a password with the users specification.
+    A simple Random password generator, which gives a password with the users specification, started with minimal source code and did the majority of the logic.
     <br />
     <br />
     <br />
@@ -44,6 +44,8 @@
 
 ## About The Project
 
+I learned so much with this project, I learned about functions, for loops, Math.floor and Math.random, iterating through arrays, if statements, manipulating the DOM. Long story short, it was rad!
+
 ### Built With
 
 - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -69,8 +71,11 @@ Don't forget to give the project a star! Thanks again!
 
 ## Live Site
 
-<!-- Project Link: [https://garrettlockhart.github.io/](https://garrettlockhart.github.io/) -->
+Project Link: [https://garrettlockhart.github.io/random-password-gen/](https://garrettlockhart.github.io/random-password-gen/)
 <br />
 <br />
+
+<!-- Demo Screenshot -->
+<img src="./assets/images/demo-screenshot.png" alt="Logo">
 
 <p align="right">(<a href="#top">back to top</a>)</p>
